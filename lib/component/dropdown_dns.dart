@@ -43,7 +43,7 @@ class DNSDropdownButton extends StatelessWidget {
                   IconButton(
                     icon: const Icon(Icons.delete),
                     onPressed: () {
-                      Navigator.of(context).pop();
+                      // Navigator.of(context).pop();
                       showDialog(
                         context: context,
                         builder: (context) => AlertDialog(
@@ -59,6 +59,7 @@ class DNSDropdownButton extends StatelessWidget {
                               onPressed: () {
                                 Navigator.pop(context);
                                 onDelete(dns);
+                                Navigator.of(context).pop();
                               },
                               child: const Text('Delete'),
                             ),

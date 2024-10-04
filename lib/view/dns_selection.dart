@@ -1,12 +1,13 @@
-import 'package:netshift/service/dns_provider.dart';
-import 'package:flutter/material.dart';
+import 'dart:math';
 import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:netshift/service/dns_provider.dart';
 import 'package:netshift/model/dns_model.dart';
 import 'package:netshift/component/bottom_sheet.dart';
 import 'package:netshift/component/dns_details.dart';
 import 'package:netshift/component/dropdown_dns.dart';
 import 'package:netshift/service/dns_service.dart';
-import 'package:provider/provider.dart';
 
 class DnsSelection extends StatefulWidget {
   final void Function(DnsModel?) onSelect;
@@ -21,7 +22,6 @@ class DnsSelection extends StatefulWidget {
   });
 
   @override
-  // ignore: library_private_types_in_public_api
   _DnsSelectionState createState() => _DnsSelectionState();
 }
 
@@ -32,7 +32,6 @@ class _DnsSelectionState extends State<DnsSelection> {
   bool _isLoadingPing = false;
 
   final dnsService = DNSService();
-
   final TextEditingController primaryController = TextEditingController();
   final TextEditingController secondaryController = TextEditingController();
   List<DnsModel> dnsOptions = [];
@@ -53,7 +52,6 @@ class _DnsSelectionState extends State<DnsSelection> {
 
   Future<void> _loadPreferences() async {
     final file = File('dns_options.txt');
-
     if (file.existsSync()) {
       final dnsList = await file.readAsLines();
       dnsOptions = dnsList.map((dnsString) {
@@ -158,7 +156,6 @@ class _DnsSelectionState extends State<DnsSelection> {
               _pingSelectedDNS();
 
               _savePreferences();
-
               Provider.of<DNSProvider>(context, listen: false).setDNS(newDns);
             });
           },
@@ -167,21 +164,71 @@ class _DnsSelectionState extends State<DnsSelection> {
     );
   }
 
-  Future<void> _removeDNSFromPreferences(DnsModel dns) async {
+  void _removeDNSFromPreferences(DnsModel dns) async {
     dnsOptions.remove(dns);
     final file = File('dns_options.txt');
     final dnsListString = dnsOptions
         .map((dns) => '${dns.name},${dns.primary},${dns.secondary}')
         .join('\n');
     await file.writeAsString(dnsListString);
+
+    if (mounted) {
+      setState(() {
+        if (selectedDNS == dns) {
+          if (dnsOptions.isNotEmpty) {
+            selectedDNS = dnsOptions[0];
+          } else {
+            selectedDNS = null;
+          }
+        }
+        primaryController.text = selectedDNS?.primary ?? '';
+        secondaryController.text = selectedDNS?.secondary ?? '';
+      });
+    }
+  }
+
+  void _generateAndAddDNS() {
+    final Random random = Random();
+
+    final primaryDNS = '10.202.${random.nextInt(256)}.${random.nextInt(256)}';
+    final secondaryDNS = '10.202.${random.nextInt(256)}.${random.nextInt(256)}';
+
+    final dnsName = 'NetShift - ${random.nextInt(1000)}';
+
+    final newDns =
+        DnsModel(name: dnsName, primary: primaryDNS, secondary: secondaryDNS);
+
+    setState(() {
+      dnsOptions.add(newDns);
+      selectedDNS = newDns;
+      primaryController.text = newDns.primary;
+      secondaryController.text = newDns.secondary;
+      _savePreferences();
+    });
+
+    _pingSelectedDNS();
+    Provider.of<DNSProvider>(context, listen: false).setDNS(newDns);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => _showAddDNSSheet(context),
-        child: const Icon(Icons.add),
+      floatingActionButton: Row(
+        children: [
+          const SizedBox(
+            width: 32,
+          ),
+          FloatingActionButton(
+            onPressed: () => _generateAndAddDNS(),
+            tooltip: 'Generate DNS',
+            child: const Icon(Icons.generating_tokens_outlined),
+          ),
+          const Spacer(),
+          FloatingActionButton(
+            onPressed: () => _showAddDNSSheet(context),
+            child: const Icon(Icons.add),
+          ),
+        ],
       ),
       appBar: AppBar(
         centerTitle: true,
@@ -209,27 +256,32 @@ class _DnsSelectionState extends State<DnsSelection> {
               onEdit: (DnsModel dns) =>
                   _showAddDNSSheet(context, dnsToEdit: dns),
               onDelete: (DnsModel dns) {
-                setState(() {
-                  dnsOptions.remove(dns);
-                  if (selectedDNS == dns) {
-                    selectedDNS = dnsOptions.isNotEmpty ? dnsOptions[0] : null;
-                    if (selectedDNS != null) {
-                      primaryController.text = selectedDNS!.primary;
-                      secondaryController.text = selectedDNS!.secondary;
-                      _updatePingTime(
-                          selectedDNS!.primary, selectedDNS!.secondary);
-                    } else {
-                      primaryController.clear();
-                      secondaryController.clear();
-                      widget.onSelect(null);
+                debugPrint('Deleting DNS: ${dns.name}');
+                if (mounted) {
+                  setState(() {
+                    dnsOptions.remove(dns);
+                    if (selectedDNS == dns) {
+                      if (dnsOptions.isNotEmpty) {
+                        selectedDNS = dnsOptions[0];
+                      } else {
+                        selectedDNS = null;
+                      }
                     }
-                  }
-                });
-                _removeDNSFromPreferences(dns);
-                _savePreferences();
-                widget.onRemove(dns);
+                    primaryController.text = selectedDNS?.primary ?? '';
+                    secondaryController.text = selectedDNS?.secondary ?? '';
+                  });
 
-                Provider.of<DNSProvider>(context, listen: false).clearDNS();
+                  _removeDNSFromPreferences(dns);
+                  _savePreferences();
+                  // widget.onRemove(dns);
+
+                  if (selectedDNS != null) {
+                    Provider.of<DNSProvider>(context, listen: false)
+                        .setDNS(selectedDNS!);
+                  } else {
+                    Provider.of<DNSProvider>(context, listen: false).clearDNS();
+                  }
+                }
               },
             ),
             const SizedBox(height: 20),
@@ -261,9 +313,6 @@ class _DnsSelectionState extends State<DnsSelection> {
                         child: const Text('Ping'),
                       ),
                     ],
-                  ),
-                  const SizedBox(
-                    height: 32,
                   ),
                 ],
               ),
