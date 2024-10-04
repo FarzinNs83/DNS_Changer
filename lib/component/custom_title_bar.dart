@@ -1,7 +1,7 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:dns_changer/theme/theme_provider.dart';
+import 'package:netshift/theme/theme_provider.dart';
 
 class CustomTitleBar extends StatelessWidget {
   const CustomTitleBar({super.key});

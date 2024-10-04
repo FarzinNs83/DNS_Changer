@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:dns_changer/model/dns_model.dart';
-import 'package:dns_changer/service/dns_provider.dart';
-import 'package:dns_changer/component/custom_nav_bar.dart';
-import 'package:dns_changer/component/custom_title_bar.dart';
-import 'package:dns_changer/component/custom_snackbar.dart';
-import 'package:dns_changer/service/dns_service.dart';
-import 'package:dns_changer/theme/theme_provider.dart';
-import 'package:dns_changer/view/dns_selection.dart';
-import 'package:dns_changer/view/settings_page.dart';
-import 'package:dns_changer/view/fastest_dns.dart';
+import 'package:netshift/service/dns_provider.dart';
+import 'package:netshift/model/dns_model.dart';
+import 'package:netshift/component/custom_nav_bar.dart';
+import 'package:netshift/component/custom_title_bar.dart';
+import 'package:netshift/component/custom_snackbar.dart';
+import 'package:netshift/service/dns_service.dart';
+import 'package:netshift/theme/theme_provider.dart';
+import 'package:netshift/view/dns_selection.dart';
+import 'package:netshift/view/settings_page.dart';
+import 'package:netshift/view/fastest_dns.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {
@@ -182,7 +182,7 @@ class _HomePageState extends State<HomePage> {
           }
         },
       ),
-        const SettingsPage(),
+      const SettingsPage(),
     ];
   }
 

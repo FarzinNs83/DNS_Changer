@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'package:dns_changer/model/dns_model.dart';
-import 'package:dns_changer/service/dns_service.dart';
+import 'package:netshift/model/dns_model.dart';
+import 'package:netshift/service/dns_service.dart';
 
 class FastestDNSPage extends StatefulWidget {
   final void Function(DnsModel) onApply;

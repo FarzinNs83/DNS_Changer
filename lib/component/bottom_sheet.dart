@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dns_changer/model/dns_model.dart';
+import 'package:netshift/model/dns_model.dart';
 
 class DNSBottomSheet extends StatelessWidget {
   final DnsModel? dnsToEdit;

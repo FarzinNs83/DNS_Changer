@@ -1,7 +1,7 @@
-import 'package:dns_changer/service/dns_provider.dart';
-import 'package:dns_changer/service/system_tray.dart';
-import 'package:dns_changer/theme/theme_provider.dart';
-import 'package:dns_changer/view/home_page.dart';
+import 'package:netshift/service/dns_provider.dart';
+import 'package:netshift/service/system_tray.dart';
+import 'package:netshift/theme/theme_provider.dart';
+import 'package:netshift/view/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:window_manager/window_manager.dart';

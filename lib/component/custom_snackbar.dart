@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:dns_changer/theme/theme_provider.dart';
-import 'package:dns_changer/component/animated_snackbar.dart';
+import 'package:netshift/theme/theme_provider.dart';
+import 'package:netshift/component/animated_snackbar.dart';
 
 void showCustomSnackBar(BuildContext context, String message) {
   final themeProvider = Provider.of<ThemeProvider>(context, listen: false);

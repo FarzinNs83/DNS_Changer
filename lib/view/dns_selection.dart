@@ -1,11 +1,11 @@
-import 'package:dns_changer/service/dns_provider.dart';
+import 'package:netshift/service/dns_provider.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'package:dns_changer/model/dns_model.dart';
-import 'package:dns_changer/component/bottom_sheet.dart';
-import 'package:dns_changer/component/dns_details.dart';
-import 'package:dns_changer/component/dropdown_dns.dart';
-import 'package:dns_changer/service/dns_service.dart';
+import 'package:netshift/model/dns_model.dart';
+import 'package:netshift/component/bottom_sheet.dart';
+import 'package:netshift/component/dns_details.dart';
+import 'package:netshift/component/dropdown_dns.dart';
+import 'package:netshift/service/dns_service.dart';
 import 'package:provider/provider.dart';
 
 class DnsSelection extends StatefulWidget {

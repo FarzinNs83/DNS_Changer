@@ -1,4 +1,4 @@
-import 'package:dns_changer/model/dns_model.dart';
+import 'package:netshift/model/dns_model.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
