@@ -89,14 +89,14 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
+            VALUE "CompanyName", "com.example.NetShift" "\0"
             VALUE "FileDescription", "NetShift" "\0"
-            VALUE "FileVersion", 1.0.2 "\0"
-            VALUE "InternalName", "NetShiftr" "\0"
+            VALUE "FileVersion", 1.0.3 "\0"
+            VALUE "InternalName", "NetShift" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "NetShift.exe" "\0"
             VALUE "ProductName", "NetShift" "\0"
-            VALUE "ProductVersion", 1.0.2 "\0"
+            VALUE "ProductVersion", 1.0.3 "\0"
         END
     END
     BLOCK "VarFileInfo"

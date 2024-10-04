@@ -7,14 +7,16 @@ class FastestDNSPage extends StatefulWidget {
   final void Function(DnsModel) onApply;
   final void Function() onClear;
 
-  const FastestDNSPage({super.key, required this.onApply, required this.onClear});
+  const FastestDNSPage(
+      {super.key, required this.onApply, required this.onClear});
 
   @override
   // ignore: library_private_types_in_public_api
   _FastestDNSPageState createState() => _FastestDNSPageState();
 }
 
-class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObserver {
+class _FastestDNSPageState extends State<FastestDNSPage>
+    with WidgetsBindingObserver {
   final dnsService = DNSService();
   List<DnsModel> dnsOptions = [];
   List<DnsModel> sortedDnsOptions = [];
@@ -42,7 +44,7 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
   }
 
   Future<void> _loadDNSOptions() async {
-    if (!mounted) return;
+    if (isLoading) return;
 
     setState(() {
       isLoading = true;
@@ -52,6 +54,7 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
     if (!file.existsSync()) {
       setState(() {
         isLoading = false;
+        dnsOptions = [];
       });
       return;
     }
@@ -73,10 +76,8 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
       } else {
         setState(() {
           this.dnsOptions = [];
-          isLoading = false;
         });
       }
-
     } catch (e) {
       print('Error loading DNS options: $e');
     } finally {
@@ -111,7 +112,23 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
     if (mounted) {
       setState(() {
         sortedDnsOptions = pingTimes.keys.toList()
-          ..sort((a, b) => pingTimes[a]!.compareTo(pingTimes[b]!));
+          ..sort((a, b) {
+            final aPing = pingTimes[a]!;
+            final bPing = pingTimes[b]!;
+
+            if ((a.primaryPingTime == null && a.secondaryPingTime == null) &&
+                (b.primaryPingTime == null && b.secondaryPingTime == null)) {
+              return 0;
+            } else if (a.primaryPingTime == null &&
+                a.secondaryPingTime == null) {
+              return 1;
+            } else if (b.primaryPingTime == null &&
+                b.secondaryPingTime == null) {
+              return -1;
+            } else {
+              return aPing.compareTo(bPing);
+            }
+          });
       });
     }
   }
@@ -164,7 +181,8 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('DNS Update', style: Theme.of(context).textTheme.headlineSmall),
+        title: Text('DNS Update',
+            style: Theme.of(context).textTheme.headlineSmall),
         content: Text(message, style: Theme.of(context).textTheme.bodyMedium),
         actions: [
           TextButton(
@@ -187,14 +205,16 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
         actions: [
           IconButton(
             icon: Icon(Icons.refresh, color: theme.iconTheme.color),
-            onPressed: _loadDNSOptions, 
+            onPressed: _loadDNSOptions,
           ),
         ],
       ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
           : sortedDnsOptions.isEmpty
-              ? Center(child: Text('No DNS options available', style: theme.textTheme.bodyMedium))
+              ? Center(
+                  child: Text('No DNS options available',
+                      style: theme.textTheme.bodyMedium))
               : ListView.builder(
                   itemCount: sortedDnsOptions.length,
                   itemBuilder: (context, index) {
@@ -202,7 +222,8 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
                     return GestureDetector(
                       onTap: () => _applyDNS(dns),
                       child: Container(
-                        margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                        margin: const EdgeInsets.symmetric(
+                            vertical: 8, horizontal: 16),
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
                           color: theme.brightness == Brightness.light
@@ -283,7 +304,8 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
               onPressed: _applyFastestDNS,
               tooltip: 'Apply Fastest DNS',
               backgroundColor: theme.primaryColor,
-              child: Icon(Icons.speed, color: theme.floatingActionButtonTheme.foregroundColor),
+              child: Icon(Icons.speed,
+                  color: theme.floatingActionButtonTheme.foregroundColor),
             ),
           ),
           Positioned(
@@ -293,7 +315,8 @@ class _FastestDNSPageState extends State<FastestDNSPage> with WidgetsBindingObse
               onPressed: _clearDNS,
               tooltip: 'Clear DNS',
               backgroundColor: Colors.redAccent,
-              child: Icon(Icons.clear, color: theme.floatingActionButtonTheme.foregroundColor),
+              child: Icon(Icons.clear,
+                  color: theme.floatingActionButtonTheme.foregroundColor),
             ),
           ),
         ],

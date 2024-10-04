@@ -29,7 +29,7 @@ Future<void> main(List<String> arguments) async {
 
   await WindowsSingleInstance.ensureSingleInstance(
     arguments,
-    "instance_checker",
+    "NetShift_instance_checker",
     // ignore: avoid_print
     onSecondWindow: (arguments) => print(arguments),
   );

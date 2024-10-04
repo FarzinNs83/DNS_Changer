@@ -19,7 +19,8 @@ class DNSDropdownButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final validSelectedDNS = dnsOptions.contains(selectedDNS) ? selectedDNS : null;
+    final validSelectedDNS =
+        dnsOptions.contains(selectedDNS) ? selectedDNS : null;
 
     return DropdownButton<DnsModel>(
       elevation: 4,
@@ -42,11 +43,13 @@ class DNSDropdownButton extends StatelessWidget {
                   IconButton(
                     icon: const Icon(Icons.delete),
                     onPressed: () {
+                      Navigator.of(context).pop();
                       showDialog(
                         context: context,
                         builder: (context) => AlertDialog(
                           title: const Text('Delete DNS'),
-                          content: const Text('Are you sure you want to delete this DNS?'),
+                          content: const Text(
+                              'Are you sure you want to delete this DNS?'),
                           actions: [
                             TextButton(
                               onPressed: () => Navigator.pop(context),

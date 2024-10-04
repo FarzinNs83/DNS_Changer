@@ -1,6 +1,11 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:dns_changer/theme/theme_provider.dart';
+import 'package:http/http.dart' as http; 
+import 'dart:convert'; 
+import 'package:url_launcher/url_launcher.dart'; 
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -32,12 +37,20 @@ class SettingsPage extends StatelessWidget {
           _buildSettingTile(
             context,
             title: 'Version Info',
-            subtitle: '1.0.2',
+            subtitle: '1.0.3',
             icon: Icons.info_outline,
             onTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('App version 1.0.2')),
+                const SnackBar(content: Text('App version 1.0.3')),
               );
+            },
+          ),
+          _buildSettingTile(
+            context,
+            title: 'Check for Updates', 
+            icon: Icons.update,
+            onTap: () async {
+              await _checkForUpdate(context);
             },
           ),
           _buildSettingTile(
@@ -46,7 +59,7 @@ class SettingsPage extends StatelessWidget {
             icon: Icons.email_outlined,
             onTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Contacs will be availabe soon.')),
+                const SnackBar(content: Text('Contacts will be available soon.')),
               );
             },
           ),
@@ -125,6 +138,70 @@ class SettingsPage extends StatelessWidget {
         ),
         onTap: onTap,
       ),
+    );
+  }
+
+  Future<void> _checkForUpdate(BuildContext context) async {
+    const String repoOwner = 'FarzinNs83'; 
+    const String repoName = 'NetShift'; 
+    const String currentVersion = 'V.1.0.3';
+
+    const url = 'https://api.github.com/repos/$repoOwner/$repoName/releases/latest';
+    final response = await http.get(Uri.parse(url));
+
+    if (response.statusCode == 200) {
+      final latestRelease = json.decode(response.body);
+      final latestVersion = latestRelease['tag_name'].replaceAll('v', ''); 
+      final releaseUrl = latestRelease['html_url'];
+
+      if (isNewVersionAvailable(currentVersion, latestVersion)) {
+        showUpdateDialog(context, currentVersion, latestVersion, releaseUrl);
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("App is Up-To-Date")),
+        );
+      }
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Error checking for the update")),
+      );
+    }
+  }
+
+  bool isNewVersionAvailable(String current, String latest) {
+    return latest.compareTo(current) > 0;
+  }
+
+  void showUpdateDialog(BuildContext context, String currentVersion, String latestVersion, String releaseUrl) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('New Update : $latestVersion'),
+          content: Text('Current Version : $currentVersion\n New Version : $latestVersion\n Do you want to download the new update ?'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () async {
+                Navigator.of(context).pop();
+                final Uri uri = Uri.parse(releaseUrl);
+                if (await canLaunchUrl(uri)) {
+                  await launchUrl(uri);
+                } else {
+                  throw 'Could not launch $releaseUrl';
+                }
+              },
+              child: const Text('Download'),
+              
+            ),
+          ],
+        );
+      },
     );
   }
 }
