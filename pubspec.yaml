@@ -30,6 +30,7 @@ dependencies:
   http: ^1.2.2
   url_launcher: ^6.3.0
   dio: ^5.7.0
+  salomon_bottom_bar: ^3.3.2
   
 
 dev_dependencies:

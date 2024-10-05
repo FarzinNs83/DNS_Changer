@@ -1,75 +1,90 @@
 import 'package:flutter/material.dart';
 
 TextTheme lightTextTheme = const TextTheme(
-  bodyLarge: TextStyle(color: Colors.blue, fontSize: 12),
+  bodyLarge: TextStyle(color: Colors.grey, fontSize: 12),
   bodyMedium: TextStyle(color: Colors.black, fontSize: 14),
-  bodySmall: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
-  displayLarge: TextStyle(color: Colors.blue, fontSize: 32, fontWeight: FontWeight.bold),
-  displayMedium: TextStyle(color: Colors.blue, fontSize: 28, fontWeight: FontWeight.bold),
-  displaySmall: TextStyle(color: Colors.blue, fontSize: 24, fontWeight: FontWeight.bold),
-  headlineMedium: TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold),
-  headlineSmall: TextStyle(color: Colors.blue, fontSize: 18, fontWeight: FontWeight.bold),
-  titleLarge: TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
-  titleMedium: TextStyle(color: Colors.blue, fontSize: 14),
-  titleSmall: TextStyle(color: Colors.blue, fontSize: 12),
-);
-
-TextTheme darkTextTheme = const TextTheme(
-  bodyLarge: TextStyle(color: Colors.greenAccent, fontSize: 12),
-  bodyMedium: TextStyle(color: Colors.white, fontSize: 14),
-  bodySmall: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
-  displayLarge: TextStyle(color: Colors.greenAccent, fontSize: 32, fontWeight: FontWeight.bold),
-  displayMedium: TextStyle(color: Colors.greenAccent, fontSize: 28, fontWeight: FontWeight.bold),
-  displaySmall: TextStyle(color: Colors.greenAccent, fontSize: 24, fontWeight: FontWeight.bold),
-  headlineMedium: TextStyle(color: Colors.greenAccent, fontSize: 20, fontWeight: FontWeight.bold),
-  headlineSmall: TextStyle(color: Colors.greenAccent, fontSize: 18, fontWeight: FontWeight.bold),
-  titleLarge: TextStyle(color: Colors.greenAccent, fontSize: 16, fontWeight: FontWeight.bold),
-  titleMedium: TextStyle(color: Colors.greenAccent, fontSize: 14),
-  titleSmall: TextStyle(color: Colors.greenAccent, fontSize: 12),
+  bodySmall: TextStyle(
+      color: Colors.black54, fontSize: 18, fontWeight: FontWeight.bold),
+  displayLarge: TextStyle(
+      color: Colors.black87, fontSize: 32, fontWeight: FontWeight.bold),
+  displayMedium: TextStyle(
+      color: Colors.black87, fontSize: 28, fontWeight: FontWeight.bold),
+  displaySmall: TextStyle(
+      color: Colors.black87, fontSize: 24, fontWeight: FontWeight.bold),
+  headlineMedium: TextStyle(
+      color: Colors.black87, fontSize: 20, fontWeight: FontWeight.bold),
+  headlineSmall: TextStyle(
+      color: Colors.black87, fontSize: 18, fontWeight: FontWeight.bold),
+  titleLarge: TextStyle(
+      color: Colors.black87, fontSize: 16, fontWeight: FontWeight.bold),
+  titleMedium: TextStyle(color: Colors.black87, fontSize: 14),
+  titleSmall: TextStyle(color: Colors.black87, fontSize: 12),
 );
 
 final ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
-  primaryColor: Colors.blue,
-  scaffoldBackgroundColor: Colors.white,
+  primaryColor: const Color(0xFF6200EE), // Purple color for primary elements
+  scaffoldBackgroundColor:
+      const Color(0xFFEFEFEF), // Very light grey for background
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-    backgroundColor: Colors.white,
-    selectedItemColor: Colors.blue,
+    backgroundColor: Color(0xFFEFEFEF), // Very light grey
+    selectedItemColor: Color(0xFF6200EE),
     unselectedItemColor: Colors.grey,
   ),
   appBarTheme: const AppBarTheme(
-    backgroundColor: Colors.blue,
+    backgroundColor: Color(0xFF6200EE),
     foregroundColor: Colors.white,
   ),
   textTheme: lightTextTheme,
   snackBarTheme: SnackBarThemeData(
-    backgroundColor: Colors.blue,
+    backgroundColor: const Color(0xFF6200EE),
     contentTextStyle: lightTextTheme.bodyMedium,
   ),
   textButtonTheme: TextButtonThemeData(
     style: TextButton.styleFrom(
-      foregroundColor: Colors.lightBlueAccent,
+      foregroundColor: const Color(0xFF6200EE),
       textStyle: lightTextTheme.bodyMedium,
     ),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
+      backgroundColor: const Color(0xFF6200EE),
       textStyle: lightTextTheme.bodyMedium,
     ),
   ),
   floatingActionButtonTheme: const FloatingActionButtonThemeData(
-    backgroundColor: Colors.blue,
+    backgroundColor: Color(0xFF6200EE),
   ),
   inputDecorationTheme: InputDecorationTheme(
     filled: true,
-    fillColor: Colors.white, 
+    fillColor: const Color(0xFFEFEFEF), // Very light grey for input fields
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
-      borderSide: const BorderSide(color: Colors.blue),
+      borderSide: const BorderSide(color: Color(0xFF6200EE)),
     ),
   ),
+);
+
+TextTheme darkTextTheme = const TextTheme(
+  bodyLarge: TextStyle(color: Colors.greenAccent, fontSize: 12),
+  bodyMedium: TextStyle(color: Colors.white, fontSize: 14),
+  bodySmall:
+      TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+  displayLarge: TextStyle(
+      color: Colors.greenAccent, fontSize: 32, fontWeight: FontWeight.bold),
+  displayMedium: TextStyle(
+      color: Colors.greenAccent, fontSize: 28, fontWeight: FontWeight.bold),
+  displaySmall: TextStyle(
+      color: Colors.greenAccent, fontSize: 24, fontWeight: FontWeight.bold),
+  headlineMedium: TextStyle(
+      color: Colors.greenAccent, fontSize: 20, fontWeight: FontWeight.bold),
+  headlineSmall: TextStyle(
+      color: Colors.greenAccent, fontSize: 18, fontWeight: FontWeight.bold),
+  titleLarge: TextStyle(
+      color: Colors.greenAccent, fontSize: 16, fontWeight: FontWeight.bold),
+  titleMedium: TextStyle(color: Colors.greenAccent, fontSize: 14),
+  titleSmall: TextStyle(color: Colors.greenAccent, fontSize: 12),
 );
 
 final ThemeData darkTheme = ThemeData(

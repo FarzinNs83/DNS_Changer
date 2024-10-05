@@ -187,133 +187,147 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildHomePage() {
-    final themeProvider = Provider.of<ThemeProvider>(context);
-    final theme = themeProvider.theme;
+  final themeProvider = Provider.of<ThemeProvider>(context);
+  final theme = themeProvider.theme;
 
-    return Consumer<DNSProvider>(
-      builder: (context, dnsProvider, child) {
-        return Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [theme.scaffoldBackgroundColor, Colors.blueGrey.shade800],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  GestureDetector(
-                    onTap: _toggleDNS,
-                    child: AnimatedContainer(
+  return Consumer<DNSProvider>(
+    builder: (context, dnsProvider, child) {
+      return Container(
+        decoration: BoxDecoration(
+          color: theme.scaffoldBackgroundColor,
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: _toggleDNS,
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 300),
+                    curve: Curves.easeInOut,
+                    width: 130,
+                    height: 130,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: dnsProvider.isPowerOn
+                            ? [theme.primaryColor, theme.primaryColorLight]
+                            : [Colors.grey.shade500, Colors.grey.shade300],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: dnsProvider.isDNSSet
+                              ? theme.primaryColor.withOpacity(0.6)
+                              : Colors.grey.shade400.withOpacity(0.5),
+                          spreadRadius: 8,
+                          blurRadius: 25,
+                          offset: const Offset(0, 4),
+                        ),
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: -4,
+                          blurRadius: 10,
+                          offset: const Offset(-4, -4),
+                        ),
+                      ],
+                    ),
+                    child: AnimatedSwitcher(
                       duration: const Duration(milliseconds: 300),
-                      curve: Curves.easeInOut,
-                      width: 120,
-                      height: 120,
-                      decoration: BoxDecoration(
-                        color: dnsProvider.isDNSSet
-                            ? (dnsProvider.isPowerOn
-                                ? theme.primaryColor
-                                : Colors.grey)
-                            : Colors.grey.shade400,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: (dnsProvider.isDNSSet
-                                    ? (dnsProvider.isPowerOn
-                                        ? theme.primaryColor
-                                        : Colors.grey)
-                                    : Colors.grey.shade400)
-                                .withOpacity(0.5),
-                            spreadRadius: dnsProvider.isPowerOn ? 8 : 3,
-                            blurRadius: dnsProvider.isPowerOn ? 25 : 15,
-                            offset: const Offset(0, 4),
-                          ),
-                        ],
-                      ),
-                      child: AnimatedSwitcher(
-                        duration: const Duration(milliseconds: 300),
-                        transitionBuilder:
-                            (Widget child, Animation<double> animation) {
-                          return FadeTransition(
-                            opacity: animation,
-                            child: child,
-                          );
-                        },
-                        child: isConnecting
-                            ? const SizedBox(
-                                height: 60,
-                                width: 60,
-                                child: CircularProgressIndicator(
-                                  color: Colors.white,
-                                  strokeWidth: 5,
-                                ),
-                              )
-                            : Icon(
-                                dnsProvider.isPowerOn
-                                    ? Icons.power_settings_new
-                                    : Icons.power_settings_new,
+                      transitionBuilder:
+                          (Widget child, Animation<double> animation) {
+                        return FadeTransition(
+                          opacity: animation,
+                          child: child,
+                        );
+                      },
+                      child: isConnecting
+                          ? const SizedBox(
+                              height: 60,
+                              width: 60,
+                              child: CircularProgressIndicator(
                                 color: Colors.white,
-                                size: 90,
+                                strokeWidth: 5,
                               ),
-                      ),
+                            )
+                          : Icon(
+                              dnsProvider.isPowerOn
+                                  ? Icons.power_settings_new
+                                  : Icons.power_settings_new,
+                              color: Colors.white,
+                              size: 90,
+                            ),
                     ),
                   ),
-                  const SizedBox(height: 20),
-                  ElevatedButton(
-                    onPressed: _flushDNS,
-                    child: const Text('Flush DNS'),
-                  ),
-                  const SizedBox(height: 20),
-                  Card(
-                    elevation: 8,
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: theme.primaryColor,
+                    shadowColor: theme.primaryColorDark,
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 12.0, horizontal: 24.0),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(18.0),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
+                    elevation: 10,
+                  ),
+                  onPressed: _flushDNS,
+                  child: const Text('Flush DNS'),
+                ),
+                const SizedBox(height: 20),
+                Card(
+                  color: theme.cardColor.withOpacity(0.9),
+                  elevation: 15,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  shadowColor: theme.shadowColor.withOpacity(0.4),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          dnsProvider.isDNSSet
+                              ? 'DNS: ${dnsProvider.selectedDNS!.name}'
+                              : 'DNS is not set',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: theme.primaryColor,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        if (dnsProvider.isDNSSet) ...[
+                          const SizedBox(height: 10),
                           Text(
-                            dnsProvider.isDNSSet
-                                ? 'DNS: ${dnsProvider.selectedDNS!.name}'
-                                : 'DNS is not set',
+                            dnsProvider.isPowerOn
+                                ? 'DNS is active'
+                                : 'DNS is set but inactive',
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: 16,
                               color: theme.primaryColor,
-                              fontWeight: FontWeight.bold,
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          if (dnsProvider.isDNSSet) ...[
-                            const SizedBox(height: 10),
-                            Text(
-                              dnsProvider.isPowerOn
-                                  ? 'DNS is active'
-                                  : 'DNS is set but inactive',
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: theme.primaryColor,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
                         ],
-                      ),
+                      ],
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
-        );
-      },
-    );
-  }
+        ),
+      );
+    },
+  );
+}
+
 
   @override
   Widget build(BuildContext context) {

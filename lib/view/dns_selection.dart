@@ -221,11 +221,12 @@ class _DnsSelectionState extends State<DnsSelection> {
           FloatingActionButton(
             onPressed: () => _generateAndAddDNS(),
             tooltip: 'Generate DNS',
-            child: const Icon(Icons.generating_tokens_outlined),
+            child: const Icon(Icons.radar_rounded),
           ),
           const Spacer(),
           FloatingActionButton(
             onPressed: () => _showAddDNSSheet(context),
+            tooltip: 'Add DNS',
             child: const Icon(Icons.add),
           ),
         ],
@@ -238,10 +239,10 @@ class _DnsSelectionState extends State<DnsSelection> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            DNSDropdownButton(
+            DNSSelector(
               dnsOptions: dnsOptions,
               selectedDNS: selectedDNS,
-              onChanged: (DnsModel? newValue) {
+              onSelected: (DnsModel? newValue) {
                 if (newValue != null) {
                   setState(() {
                     selectedDNS = newValue;
@@ -253,8 +254,9 @@ class _DnsSelectionState extends State<DnsSelection> {
                   _pingSelectedDNS();
                 }
               },
-              onEdit: (DnsModel dns) =>
-                  _showAddDNSSheet(context, dnsToEdit: dns),
+              onEdit: (DnsModel dns) {
+                _showAddDNSSheet(context, dnsToEdit: dns);
+              },
               onDelete: (DnsModel dns) {
                 debugPrint('Deleting DNS: ${dns.name}');
                 if (mounted) {
@@ -273,7 +275,6 @@ class _DnsSelectionState extends State<DnsSelection> {
 
                   _removeDNSFromPreferences(dns);
                   _savePreferences();
-                  // widget.onRemove(dns);
 
                   if (selectedDNS != null) {
                     Provider.of<DNSProvider>(context, listen: false)
