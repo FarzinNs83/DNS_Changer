@@ -187,13 +187,19 @@ class _DnsSelectionState extends State<DnsSelection> {
     }
   }
 
+  List<String> validateDNS = [
+    '8.8.8.8',
+    '8.8.4.4',
+    '1.1.1.1',
+    '1.0.0.1',
+  ];
   void _generateAndAddDNS() {
     final Random random = Random();
 
-    final primaryDNS = '10.202.${random.nextInt(256)}.${random.nextInt(256)}';
-    final secondaryDNS = '10.202.${random.nextInt(256)}.${random.nextInt(256)}';
+    final primaryDNS = validateDNS[random.nextInt(validateDNS.length)];
+    final secondaryDNS = validateDNS[random.nextInt(validateDNS.length)];
 
-    final dnsName = 'NetShift - ${random.nextInt(1000)}';
+    final dnsName = 'NetShift Generated - ${random.nextInt(1000)}';
 
     final newDns =
         DnsModel(name: dnsName, primary: primaryDNS, secondary: secondaryDNS);

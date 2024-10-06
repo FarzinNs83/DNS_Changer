@@ -31,6 +31,7 @@ dependencies:
   url_launcher: ^6.3.0
   dio: ^5.7.0
   salomon_bottom_bar: ^3.3.2
+  font_awesome_flutter: ^10.7.0
   
 
 dev_dependencies:
@@ -44,3 +45,6 @@ flutter:
 
   assets:
     - assets/images/tray.ico
+    - assets/images/github.png
+    - assets/images/telegram.png
+    - assets/images/support.png

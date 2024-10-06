@@ -17,17 +17,17 @@ TextTheme lightTextTheme = const TextTheme(
       color: Colors.black87, fontSize: 18, fontWeight: FontWeight.bold),
   titleLarge: TextStyle(
       color: Colors.black87, fontSize: 16, fontWeight: FontWeight.bold),
-  titleMedium: TextStyle(color: Colors.black87, fontSize: 14),
+  titleMedium: TextStyle(
+      color: Color(0xFF6200EE), fontSize: 14, fontWeight: FontWeight.w300),
   titleSmall: TextStyle(color: Colors.black87, fontSize: 12),
 );
 
 final ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
-  primaryColor: const Color(0xFF6200EE), // Purple color for primary elements
-  scaffoldBackgroundColor:
-      const Color(0xFFEFEFEF), // Very light grey for background
+  primaryColor: const Color(0xFF6200EE),
+  scaffoldBackgroundColor: const Color(0xFFEFEFEF),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-    backgroundColor: Color(0xFFEFEFEF), // Very light grey
+    backgroundColor: Color(0xFFEFEFEF),
     selectedItemColor: Color(0xFF6200EE),
     unselectedItemColor: Colors.grey,
   ),
@@ -58,7 +58,7 @@ final ThemeData lightTheme = ThemeData(
   ),
   inputDecorationTheme: InputDecorationTheme(
     filled: true,
-    fillColor: const Color(0xFFEFEFEF), // Very light grey for input fields
+    fillColor: const Color(0xFFEFEFEF),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
       borderSide: const BorderSide(color: Color(0xFF6200EE)),
@@ -83,7 +83,10 @@ TextTheme darkTextTheme = const TextTheme(
       color: Colors.greenAccent, fontSize: 18, fontWeight: FontWeight.bold),
   titleLarge: TextStyle(
       color: Colors.greenAccent, fontSize: 16, fontWeight: FontWeight.bold),
-  titleMedium: TextStyle(color: Colors.greenAccent, fontSize: 14),
+  titleMedium: TextStyle(
+      color: Color.fromARGB(255, 95, 156, 141),
+      fontSize: 14,
+      fontWeight: FontWeight.w300),
   titleSmall: TextStyle(color: Colors.greenAccent, fontSize: 12),
 );
 
