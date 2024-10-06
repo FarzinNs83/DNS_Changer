@@ -25,7 +25,7 @@ class DNSSelector extends StatelessWidget {
           context: context,
           builder: (BuildContext context) {
             return Container(
-              height: MediaQuery.of(context).size.height * 0.4,
+              height: MediaQuery.of(context).size.height * 0.5,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.surface,
                 borderRadius: const BorderRadius.vertical(

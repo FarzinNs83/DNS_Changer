@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:math';
 import 'dart:io';
 import 'package:flutter/material.dart';
@@ -6,8 +8,10 @@ import 'package:netshift/service/dns_provider.dart';
 import 'package:netshift/model/dns_model.dart';
 import 'package:netshift/component/bottom_sheet.dart';
 import 'package:netshift/component/dns_details.dart';
-import 'package:netshift/component/dropdown_dns.dart';
+import 'package:netshift/component/custom_dropdown_dns.dart';
 import 'package:netshift/service/dns_service.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
 class DnsSelection extends StatefulWidget {
   final void Function(DnsModel?) onSelect;
@@ -22,6 +26,7 @@ class DnsSelection extends StatefulWidget {
   });
 
   @override
+  // ignore: library_private_types_in_public_api
   _DnsSelectionState createState() => _DnsSelectionState();
 }
 
@@ -40,6 +45,7 @@ class _DnsSelectionState extends State<DnsSelection> {
   void initState() {
     super.initState();
     _loadPreferences();
+    // fetchDNSFromAPI();
   }
 
   @override
@@ -187,33 +193,43 @@ class _DnsSelectionState extends State<DnsSelection> {
     }
   }
 
-  List<String> validateDNS = [
-    '8.8.8.8',
-    '8.8.4.4',
-    '1.1.1.1',
-    '1.0.0.1',
-  ];
-  void _generateAndAddDNS() {
-    final Random random = Random();
+  Future<List<DnsModel>> fetchDNSFromAPI() async {
+    final response =
+        await http.get(Uri.parse('https://api.mrsf.ir/api/data/get/?id=1005'));
+    if (response.statusCode == 200) {
+      final Map<String, dynamic> data = json.decode(response.body);
 
-    final primaryDNS = validateDNS[random.nextInt(validateDNS.length)];
-    final secondaryDNS = validateDNS[random.nextInt(validateDNS.length)];
+      final List<dynamic>? dnsListJson = data['validateDNS'] as List<dynamic>?;
+      if (dnsListJson == null) {
+        throw Exception('DNS list is null');
+      }
 
-    final dnsName = 'NetShift Generated - ${random.nextInt(1000)}';
+      return dnsListJson.map((json) => DnsModel.fromJson(json)).toList();
+    } else {
+      throw Exception('Failed to load DNS');
+    }
+  }
 
-    final newDns =
-        DnsModel(name: dnsName, primary: primaryDNS, secondary: secondaryDNS);
+  Future<void> _generateAndAddDNS() async {
+    try {
+      List<DnsModel> dnsList = await fetchDNSFromAPI();
 
-    setState(() {
-      dnsOptions.add(newDns);
-      selectedDNS = newDns;
-      primaryController.text = newDns.primary;
-      secondaryController.text = newDns.secondary;
-      _savePreferences();
-    });
+      final Random random = Random();
+      final newDns = dnsList[random.nextInt(dnsList.length)];
 
-    _pingSelectedDNS();
-    Provider.of<DNSProvider>(context, listen: false).setDNS(newDns);
+      setState(() {
+        dnsOptions.add(newDns);
+        selectedDNS = newDns;
+        primaryController.text = newDns.primary;
+        secondaryController.text = newDns.secondary;
+        _savePreferences();
+      });
+
+      _pingSelectedDNS();
+      Provider.of<DNSProvider>(context, listen: false).setDNS(newDns);
+    } catch (e) {
+      debugPrint('Error fetching DNS: $e');
+    }
   }
 
   @override

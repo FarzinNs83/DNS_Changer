@@ -23,13 +23,11 @@ class DnsModel {
   //   };
   // }
 
-  // factory DnsModel.fromMap(Map<String, dynamic> map) {
-  //   return DnsModel(
-  //     name: map['name'],
-  //     primary: map['primary'],
-  //     secondary: map['secondary'],
-  //     primaryPingTime: map['primaryPingTime'],
-  //     secondaryPingTime: map['secondaryPingTime'],
-  //   );
-  // }
+  factory DnsModel.fromJson(Map<String, dynamic> json) {
+    return DnsModel(
+      name: json['name'],
+      primary: json['primary'],
+      secondary: json['secondary'],
+    );
+  }
 }
