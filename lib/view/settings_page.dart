@@ -300,6 +300,28 @@ class SettingsPage extends StatelessWidget {
               );
             },
           ),
+          const SizedBox(
+            height: 8,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.favorite_border_outlined,
+                color: Theme.of(context).iconTheme.color,
+              ),
+              const SizedBox(
+                width: 8,
+              ),
+              Text(
+                "Made By Feri",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );

@@ -213,7 +213,7 @@ class _FastestDNSPageState extends State<FastestDNSPage>
           ? const Center(child: CircularProgressIndicator())
           : sortedDnsOptions.isEmpty
               ? Center(
-                  child: Text('No DNS options available',
+                  child: Text('Please Refresh To Load The Page',
                       style: theme.textTheme.bodyMedium))
               : ListView.builder(
                   itemCount: sortedDnsOptions.length,

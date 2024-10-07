@@ -3,6 +3,7 @@
 import 'dart:math';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:netshift/api/api.dart';
 import 'package:provider/provider.dart';
 import 'package:netshift/service/dns_provider.dart';
 import 'package:netshift/model/dns_model.dart';
@@ -10,8 +11,6 @@ import 'package:netshift/component/bottom_sheet.dart';
 import 'package:netshift/component/dns_details.dart';
 import 'package:netshift/component/custom_dropdown_dns.dart';
 import 'package:netshift/service/dns_service.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 
 class DnsSelection extends StatefulWidget {
   final void Function(DnsModel?) onSelect;
@@ -193,26 +192,10 @@ class _DnsSelectionState extends State<DnsSelection> {
     }
   }
 
-  Future<List<DnsModel>> fetchDNSFromAPI() async {
-    final response =
-        await http.get(Uri.parse('https://api.mrsf.ir/api/data/get/?id=1005'));
-    if (response.statusCode == 200) {
-      final Map<String, dynamic> data = json.decode(response.body);
-
-      final List<dynamic>? dnsListJson = data['validateDNS'] as List<dynamic>?;
-      if (dnsListJson == null) {
-        throw Exception('DNS list is null');
-      }
-
-      return dnsListJson.map((json) => DnsModel.fromJson(json)).toList();
-    } else {
-      throw Exception('Failed to load DNS');
-    }
-  }
-
   Future<void> _generateAndAddDNS() async {
     try {
-      List<DnsModel> dnsList = await fetchDNSFromAPI();
+      Api api = Api();
+      List<DnsModel> dnsList = await api.fetchDNSFromAPI();
 
       final Random random = Random();
       final newDns = dnsList[random.nextInt(dnsList.length)];

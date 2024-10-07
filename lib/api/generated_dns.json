@@ -1,0 +1,2504 @@
+{
+    "validateDNS": [
+        {
+            "name": "NetShift Generated DNS - 1",
+            "primary": "208.67.222.222",
+            "secondary": "89.233.43.71"
+        },
+        {
+            "name": "NetShift Generated DNS - 2",
+            "primary": "74.82.42.42",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 3",
+            "primary": "156.154.71.22",
+            "secondary": "8.8.4.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 4",
+            "primary": "5.202.100.101",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 5",
+            "primary": "8.20.247.20",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 6",
+            "primary": "80.80.80.80",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 7",
+            "primary": "74.82.42.42",
+            "secondary": "204.97.212.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 8",
+            "primary": "204.97.212.10",
+            "secondary": "64.6.64.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 9",
+            "primary": "216.146.35.35",
+            "secondary": "216.146.36.36"
+        },
+        {
+            "name": "NetShift Generated DNS - 10",
+            "primary": "204.74.101.1",
+            "secondary": "80.67.169.12"
+        },
+        {
+            "name": "NetShift Generated DNS - 11",
+            "primary": "8.8.4.4",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 12",
+            "primary": "156.154.70.22",
+            "secondary": "80.67.169.12"
+        },
+        {
+            "name": "NetShift Generated DNS - 13",
+            "primary": "195.46.39.39",
+            "secondary": "216.146.35.35"
+        },
+        {
+            "name": "NetShift Generated DNS - 14",
+            "primary": "212.23.8.1",
+            "secondary": "129.250.35.251"
+        },
+        {
+            "name": "NetShift Generated DNS - 15",
+            "primary": "78.157.42.100",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 16",
+            "primary": "205.171.2.65",
+            "secondary": "209.244.0.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 17",
+            "primary": "77.88.8.1",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 18",
+            "primary": "5.202.100.100",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 19",
+            "primary": "1.0.0.1",
+            "secondary": "89.233.43.71"
+        },
+        {
+            "name": "NetShift Generated DNS - 20",
+            "primary": "204.97.212.10",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 21",
+            "primary": "129.250.35.250",
+            "secondary": "208.67.222.222"
+        },
+        {
+            "name": "NetShift Generated DNS - 22",
+            "primary": "89.233.43.71",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 23",
+            "primary": "89.233.43.71",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 24",
+            "primary": "195.92.195.94",
+            "secondary": "216.146.35.35"
+        },
+        {
+            "name": "NetShift Generated DNS - 25",
+            "primary": "74.82.42.42",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 26",
+            "primary": "208.67.222.222",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 27",
+            "primary": "8.8.8.8",
+            "secondary": "185.55.225.25"
+        },
+        {
+            "name": "NetShift Generated DNS - 28",
+            "primary": "5.202.100.101",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 29",
+            "primary": "8.26.56.26",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 30",
+            "primary": "78.157.42.100",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 31",
+            "primary": "4.2.2.3",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 32",
+            "primary": "156.154.71.5",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 33",
+            "primary": "74.82.42.42",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 34",
+            "primary": "4.2.2.5",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 35",
+            "primary": "209.244.0.4",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 36",
+            "primary": "64.6.65.6",
+            "secondary": "212.23.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 37",
+            "primary": "216.146.35.35",
+            "secondary": "204.74.101.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 38",
+            "primary": "195.46.39.40",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 39",
+            "primary": "156.154.71.22",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 40",
+            "primary": "78.157.42.100",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 41",
+            "primary": "205.171.2.65",
+            "secondary": "185.51.200.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 42",
+            "primary": "198.153.194.1",
+            "secondary": "208.67.222.222"
+        },
+        {
+            "name": "NetShift Generated DNS - 43",
+            "primary": "205.171.2.65",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 44",
+            "primary": "8.8.8.8",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 45",
+            "primary": "1.0.0.1",
+            "secondary": "216.146.35.35"
+        },
+        {
+            "name": "NetShift Generated DNS - 46",
+            "primary": "4.2.2.1",
+            "secondary": "156.154.71.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 47",
+            "primary": "199.2.252.10",
+            "secondary": "212.23.3.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 48",
+            "primary": "1.0.0.1",
+            "secondary": "84.200.70.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 49",
+            "primary": "10.202.10.10",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 50",
+            "primary": "208.67.200.200",
+            "secondary": "85.15.1.15"
+        },
+        {
+            "name": "NetShift Generated DNS - 51",
+            "primary": "185.51.200.2",
+            "secondary": "195.46.39.39"
+        },
+        {
+            "name": "NetShift Generated DNS - 52",
+            "primary": "64.6.64.6",
+            "secondary": "204.97.212.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 53",
+            "primary": "209.244.0.4",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 54",
+            "primary": "156.154.70.22",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 55",
+            "primary": "84.200.69.80",
+            "secondary": "10.202.10.102"
+        },
+        {
+            "name": "NetShift Generated DNS - 56",
+            "primary": "204.117.214.10",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 57",
+            "primary": "204.69.234.1",
+            "secondary": "9.9.9.9"
+        },
+        {
+            "name": "NetShift Generated DNS - 58",
+            "primary": "1.1.1.1",
+            "secondary": "212.23.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 59",
+            "primary": "156.154.70.5",
+            "secondary": "10.202.10.102"
+        },
+        {
+            "name": "NetShift Generated DNS - 60",
+            "primary": "85.15.1.15",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 61",
+            "primary": "49.112.112.112",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 62",
+            "primary": "198.153.194.1",
+            "secondary": "156.154.71.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 63",
+            "primary": "204.69.234.1",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 64",
+            "primary": "5.202.100.101",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 65",
+            "primary": "199.85.127.10",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 66",
+            "primary": "8.20.247.20",
+            "secondary": "89.233.43.71"
+        },
+        {
+            "name": "NetShift Generated DNS - 67",
+            "primary": "198.153.192.1",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 68",
+            "primary": "85.15.1.15",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 69",
+            "primary": "10.202.10.202",
+            "secondary": "212.23.3.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 70",
+            "primary": "208.67.222.222",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 71",
+            "primary": "199.2.252.10",
+            "secondary": "129.250.35.251"
+        },
+        {
+            "name": "NetShift Generated DNS - 72",
+            "primary": "198.153.194.1",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 73",
+            "primary": "78.157.42.100",
+            "secondary": "9.9.9.9"
+        },
+        {
+            "name": "NetShift Generated DNS - 74",
+            "primary": "80.67.169.40",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 75",
+            "primary": "209.244.0.3",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 76",
+            "primary": "195.92.195.95",
+            "secondary": "4.2.2.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 77",
+            "primary": "5.202.100.101",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 78",
+            "primary": "5.202.100.100",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 79",
+            "primary": "49.112.112.112",
+            "secondary": "216.146.35.35"
+        },
+        {
+            "name": "NetShift Generated DNS - 80",
+            "primary": "185.55.225.25",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 81",
+            "primary": "10.202.10.202",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 82",
+            "primary": "204.69.234.1",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 83",
+            "primary": "199.85.126.10",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 84",
+            "primary": "199.85.126.10",
+            "secondary": "209.244.0.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 85",
+            "primary": "84.200.70.40",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 86",
+            "primary": "185.51.200.2",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 87",
+            "primary": "156.154.70.1",
+            "secondary": "84.200.69.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 88",
+            "primary": "74.82.42.42",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 89",
+            "primary": "204.69.234.1",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 90",
+            "primary": "89.233.43.71",
+            "secondary": "204.69.234.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 91",
+            "primary": "195.92.195.95",
+            "secondary": "8.8.4.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 92",
+            "primary": "85.15.1.15",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 93",
+            "primary": "216.146.36.36",
+            "secondary": "195.46.39.39"
+        },
+        {
+            "name": "NetShift Generated DNS - 94",
+            "primary": "204.74.101.1",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 95",
+            "primary": "209.244.0.4",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 96",
+            "primary": "204.69.234.1",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 97",
+            "primary": "156.154.70.1",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 98",
+            "primary": "156.154.70.22",
+            "secondary": "8.8.4.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 99",
+            "primary": "185.55.226.26",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 100",
+            "primary": "80.80.81.81",
+            "secondary": "198.153.194.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 101",
+            "primary": "195.46.39.40",
+            "secondary": "8.8.4.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 102",
+            "primary": "4.2.2.2",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 103",
+            "primary": "209.244.0.4",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 104",
+            "primary": "4.2.2.3",
+            "secondary": "49.112.112.112"
+        },
+        {
+            "name": "NetShift Generated DNS - 105",
+            "primary": "204.74.101.1",
+            "secondary": "185.55.225.25"
+        },
+        {
+            "name": "NetShift Generated DNS - 106",
+            "primary": "5.202.100.100",
+            "secondary": "195.46.39.39"
+        },
+        {
+            "name": "NetShift Generated DNS - 107",
+            "primary": "8.8.8.8",
+            "secondary": "209.244.0.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 108",
+            "primary": "199.85.126.10",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 109",
+            "primary": "195.92.195.95",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 110",
+            "primary": "64.6.64.6",
+            "secondary": "1.0.0.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 111",
+            "primary": "80.80.80.80",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 112",
+            "primary": "178.22.122.100",
+            "secondary": "4.2.2.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 113",
+            "primary": "156.154.70.1",
+            "secondary": "84.200.70.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 114",
+            "primary": "78.157.42.100",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 115",
+            "primary": "8.8.8.8",
+            "secondary": "85.15.1.15"
+        },
+        {
+            "name": "NetShift Generated DNS - 116",
+            "primary": "5.202.100.101",
+            "secondary": "10.202.10.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 117",
+            "primary": "185.55.226.26",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 118",
+            "primary": "208.67.200.200",
+            "secondary": "212.23.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 119",
+            "primary": "129.250.35.251",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 120",
+            "primary": "89.233.43.71",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 121",
+            "primary": "195.92.195.94",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 122",
+            "primary": "91.239.100.100",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 123",
+            "primary": "4.2.2.6",
+            "secondary": "64.6.64.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 124",
+            "primary": "205.171.2.65",
+            "secondary": "84.200.69.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 125",
+            "primary": "199.2.252.10",
+            "secondary": "212.23.3.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 126",
+            "primary": "80.67.169.40",
+            "secondary": "89.233.43.71"
+        },
+        {
+            "name": "NetShift Generated DNS - 127",
+            "primary": "89.233.43.71",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 128",
+            "primary": "1.1.1.1",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 129",
+            "primary": "199.85.127.10",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 130",
+            "primary": "212.23.8.1",
+            "secondary": "4.2.2.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 131",
+            "primary": "49.112.112.112",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 132",
+            "primary": "129.250.35.251",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 133",
+            "primary": "195.92.195.94",
+            "secondary": "8.8.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 134",
+            "primary": "216.146.35.35",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 135",
+            "primary": "10.202.10.10",
+            "secondary": "212.23.3.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 136",
+            "primary": "78.157.42.100",
+            "secondary": "9.9.9.9"
+        },
+        {
+            "name": "NetShift Generated DNS - 137",
+            "primary": "91.239.100.100",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 138",
+            "primary": "209.244.0.3",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 139",
+            "primary": "204.74.101.1",
+            "secondary": "205.171.3.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 140",
+            "primary": "209.244.0.4",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 141",
+            "primary": "185.55.225.25",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 142",
+            "primary": "185.55.225.25",
+            "secondary": "204.69.234.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 143",
+            "primary": "8.20.247.20",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 144",
+            "primary": "205.171.3.65",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 145",
+            "primary": "209.244.0.3",
+            "secondary": "129.250.35.250"
+        },
+        {
+            "name": "NetShift Generated DNS - 146",
+            "primary": "156.154.71.5",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 147",
+            "primary": "129.250.35.250",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 148",
+            "primary": "4.2.2.1",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 149",
+            "primary": "198.153.194.1",
+            "secondary": "216.146.36.36"
+        },
+        {
+            "name": "NetShift Generated DNS - 150",
+            "primary": "195.46.39.40",
+            "secondary": "89.233.43.71"
+        },
+        {
+            "name": "NetShift Generated DNS - 151",
+            "primary": "209.244.0.4",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 152",
+            "primary": "199.85.127.10",
+            "secondary": "185.55.225.25"
+        },
+        {
+            "name": "NetShift Generated DNS - 153",
+            "primary": "91.239.100.100",
+            "secondary": "212.23.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 154",
+            "primary": "8.8.8.8",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 155",
+            "primary": "204.74.101.1",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 156",
+            "primary": "10.202.10.102",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 157",
+            "primary": "10.202.10.10",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 158",
+            "primary": "185.55.226.26",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 159",
+            "primary": "205.171.2.65",
+            "secondary": "209.244.0.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 160",
+            "primary": "204.74.101.1",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 161",
+            "primary": "85.15.1.15",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 162",
+            "primary": "199.85.127.10",
+            "secondary": "10.202.10.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 163",
+            "primary": "199.85.126.10",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 164",
+            "primary": "4.2.2.5",
+            "secondary": "1.0.0.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 165",
+            "primary": "216.146.35.35",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 166",
+            "primary": "199.85.126.10",
+            "secondary": "80.80.80.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 167",
+            "primary": "78.157.42.100",
+            "secondary": "9.9.9.9"
+        },
+        {
+            "name": "NetShift Generated DNS - 168",
+            "primary": "204.97.212.10",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 169",
+            "primary": "129.250.35.251",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 170",
+            "primary": "8.8.8.8",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 171",
+            "primary": "198.153.192.1",
+            "secondary": "216.146.36.36"
+        },
+        {
+            "name": "NetShift Generated DNS - 172",
+            "primary": "84.200.70.40",
+            "secondary": "78.157.42.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 173",
+            "primary": "80.67.169.12",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 174",
+            "primary": "185.55.226.26",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 175",
+            "primary": "204.117.214.10",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 176",
+            "primary": "178.22.122.100",
+            "secondary": "78.157.42.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 177",
+            "primary": "209.244.0.3",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 178",
+            "primary": "209.244.0.4",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 179",
+            "primary": "4.2.2.2",
+            "secondary": "208.67.200.200"
+        },
+        {
+            "name": "NetShift Generated DNS - 180",
+            "primary": "204.74.101.1",
+            "secondary": "204.97.212.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 181",
+            "primary": "84.200.70.40",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 182",
+            "primary": "78.157.42.101",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 183",
+            "primary": "204.97.212.10",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 184",
+            "primary": "10.202.10.10",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 185",
+            "primary": "8.26.56.26",
+            "secondary": "85.15.1.15"
+        },
+        {
+            "name": "NetShift Generated DNS - 186",
+            "primary": "199.85.126.10",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 187",
+            "primary": "4.2.2.2",
+            "secondary": "156.154.71.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 188",
+            "primary": "5.202.100.100",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 189",
+            "primary": "204.97.212.10",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 190",
+            "primary": "80.67.169.40",
+            "secondary": "84.200.69.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 191",
+            "primary": "4.2.2.4",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 192",
+            "primary": "209.244.0.3",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 193",
+            "primary": "89.233.43.71",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 194",
+            "primary": "204.69.234.1",
+            "secondary": "209.244.0.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 195",
+            "primary": "85.15.1.14",
+            "secondary": "185.51.200.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 196",
+            "primary": "156.154.70.22",
+            "secondary": "4.2.2.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 197",
+            "primary": "205.171.2.65",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 198",
+            "primary": "208.67.200.200",
+            "secondary": "4.2.2.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 199",
+            "primary": "4.2.2.3",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 200",
+            "primary": "204.97.212.10",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 201",
+            "primary": "216.146.36.36",
+            "secondary": "156.154.71.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 202",
+            "primary": "208.67.200.200",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 203",
+            "primary": "4.2.2.2",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 204",
+            "primary": "1.0.0.1",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 205",
+            "primary": "216.146.35.35",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 206",
+            "primary": "80.80.80.80",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 207",
+            "primary": "5.202.100.100",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 208",
+            "primary": "209.244.0.4",
+            "secondary": "205.171.3.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 209",
+            "primary": "129.250.35.250",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 210",
+            "primary": "156.154.71.22",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 211",
+            "primary": "77.88.8.8",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 212",
+            "primary": "5.202.100.100",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 213",
+            "primary": "185.55.225.25",
+            "secondary": "156.154.71.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 214",
+            "primary": "4.2.2.3",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 215",
+            "primary": "204.117.214.10",
+            "secondary": "208.67.222.222"
+        },
+        {
+            "name": "NetShift Generated DNS - 216",
+            "primary": "84.200.69.80",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 217",
+            "primary": "178.22.122.100",
+            "secondary": "156.154.70.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 218",
+            "primary": "156.154.70.22",
+            "secondary": "195.46.39.39"
+        },
+        {
+            "name": "NetShift Generated DNS - 219",
+            "primary": "89.233.43.71",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 220",
+            "primary": "85.15.1.15",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 221",
+            "primary": "204.117.214.10",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 222",
+            "primary": "129.250.35.251",
+            "secondary": "205.171.3.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 223",
+            "primary": "5.202.100.100",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 224",
+            "primary": "91.239.100.100",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 225",
+            "primary": "195.92.195.94",
+            "secondary": "156.154.71.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 226",
+            "primary": "4.2.2.4",
+            "secondary": "156.154.70.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 227",
+            "primary": "4.2.2.5",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 228",
+            "primary": "129.250.35.251",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 229",
+            "primary": "198.153.192.1",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 230",
+            "primary": "78.157.42.101",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 231",
+            "primary": "1.1.1.1",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 232",
+            "primary": "78.157.42.100",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 233",
+            "primary": "156.154.71.22",
+            "secondary": "49.112.112.112"
+        },
+        {
+            "name": "NetShift Generated DNS - 234",
+            "primary": "204.117.214.10",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 235",
+            "primary": "80.80.80.80",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 236",
+            "primary": "4.2.2.5",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 237",
+            "primary": "10.202.10.202",
+            "secondary": "64.6.64.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 238",
+            "primary": "209.244.0.4",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 239",
+            "primary": "156.154.70.1",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 240",
+            "primary": "5.202.100.101",
+            "secondary": "185.55.225.25"
+        },
+        {
+            "name": "NetShift Generated DNS - 241",
+            "primary": "209.244.0.4",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 242",
+            "primary": "4.2.2.1",
+            "secondary": "156.154.71.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 243",
+            "primary": "216.146.36.36",
+            "secondary": "185.51.200.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 244",
+            "primary": "80.67.169.40",
+            "secondary": "198.153.194.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 245",
+            "primary": "185.55.225.25",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 246",
+            "primary": "205.171.2.65",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 247",
+            "primary": "199.85.127.10",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 248",
+            "primary": "10.202.10.10",
+            "secondary": "208.67.222.222"
+        },
+        {
+            "name": "NetShift Generated DNS - 249",
+            "primary": "91.239.100.100",
+            "secondary": "80.80.80.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 250",
+            "primary": "204.74.101.1",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 251",
+            "primary": "208.67.200.200",
+            "secondary": "156.154.70.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 252",
+            "primary": "204.97.212.10",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 253",
+            "primary": "85.15.1.14",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 254",
+            "primary": "209.244.0.4",
+            "secondary": "8.8.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 255",
+            "primary": "10.202.10.11",
+            "secondary": "49.112.112.112"
+        },
+        {
+            "name": "NetShift Generated DNS - 256",
+            "primary": "204.97.212.10",
+            "secondary": "10.202.10.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 257",
+            "primary": "195.92.195.94",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 258",
+            "primary": "205.171.3.65",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 259",
+            "primary": "204.69.234.1",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 260",
+            "primary": "1.1.1.1",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 261",
+            "primary": "4.2.2.2",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 262",
+            "primary": "85.15.1.15",
+            "secondary": "84.200.70.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 263",
+            "primary": "4.2.2.6",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 264",
+            "primary": "212.23.3.1",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 265",
+            "primary": "64.6.65.6",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 266",
+            "primary": "178.22.122.100",
+            "secondary": "195.92.195.94"
+        },
+        {
+            "name": "NetShift Generated DNS - 267",
+            "primary": "195.46.39.39",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 268",
+            "primary": "156.154.71.5",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 269",
+            "primary": "8.26.56.26",
+            "secondary": "156.154.71.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 270",
+            "primary": "64.6.65.6",
+            "secondary": "216.146.36.36"
+        },
+        {
+            "name": "NetShift Generated DNS - 271",
+            "primary": "204.97.212.10",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 272",
+            "primary": "204.97.212.10",
+            "secondary": "129.250.35.250"
+        },
+        {
+            "name": "NetShift Generated DNS - 273",
+            "primary": "204.97.212.10",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 274",
+            "primary": "10.202.10.202",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 275",
+            "primary": "10.202.10.11",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 276",
+            "primary": "85.15.1.14",
+            "secondary": "185.55.226.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 277",
+            "primary": "64.6.65.6",
+            "secondary": "8.8.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 278",
+            "primary": "10.202.10.11",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 279",
+            "primary": "216.146.35.35",
+            "secondary": "85.15.1.14"
+        },
+        {
+            "name": "NetShift Generated DNS - 280",
+            "primary": "129.250.35.251",
+            "secondary": "8.8.4.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 281",
+            "primary": "204.69.234.1",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 282",
+            "primary": "80.80.81.81",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 283",
+            "primary": "198.153.194.1",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 284",
+            "primary": "49.112.112.112",
+            "secondary": "185.55.226.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 285",
+            "primary": "129.250.35.250",
+            "secondary": "204.69.234.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 286",
+            "primary": "209.244.0.3",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 287",
+            "primary": "64.6.64.6",
+            "secondary": "85.15.1.15"
+        },
+        {
+            "name": "NetShift Generated DNS - 288",
+            "primary": "198.153.192.1",
+            "secondary": "204.69.234.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 289",
+            "primary": "1.1.1.1",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 290",
+            "primary": "8.8.4.4",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 291",
+            "primary": "198.153.192.1",
+            "secondary": "8.8.4.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 292",
+            "primary": "80.67.169.12",
+            "secondary": "195.46.39.39"
+        },
+        {
+            "name": "NetShift Generated DNS - 293",
+            "primary": "209.244.0.4",
+            "secondary": "4.2.2.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 294",
+            "primary": "4.2.2.5",
+            "secondary": "10.202.10.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 295",
+            "primary": "199.85.127.10",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 296",
+            "primary": "204.97.212.10",
+            "secondary": "85.15.1.14"
+        },
+        {
+            "name": "NetShift Generated DNS - 297",
+            "primary": "199.85.126.10",
+            "secondary": "216.146.36.36"
+        },
+        {
+            "name": "NetShift Generated DNS - 298",
+            "primary": "4.2.2.4",
+            "secondary": "212.23.3.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 299",
+            "primary": "185.55.226.26",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 300",
+            "primary": "8.8.4.4",
+            "secondary": "198.153.194.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 301",
+            "primary": "216.146.36.36",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 302",
+            "primary": "80.67.169.40",
+            "secondary": "64.6.64.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 303",
+            "primary": "185.55.226.26",
+            "secondary": "195.46.39.39"
+        },
+        {
+            "name": "NetShift Generated DNS - 304",
+            "primary": "5.202.100.100",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 305",
+            "primary": "198.153.194.1",
+            "secondary": "8.8.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 306",
+            "primary": "195.92.195.94",
+            "secondary": "216.146.35.35"
+        },
+        {
+            "name": "NetShift Generated DNS - 307",
+            "primary": "212.23.3.1",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 308",
+            "primary": "185.55.225.25",
+            "secondary": "8.20.247.20"
+        },
+        {
+            "name": "NetShift Generated DNS - 309",
+            "primary": "156.154.70.22",
+            "secondary": "195.46.39.39"
+        },
+        {
+            "name": "NetShift Generated DNS - 310",
+            "primary": "156.154.70.1",
+            "secondary": "78.157.42.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 311",
+            "primary": "80.80.80.80",
+            "secondary": "129.250.35.251"
+        },
+        {
+            "name": "NetShift Generated DNS - 312",
+            "primary": "195.92.195.94",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 313",
+            "primary": "10.202.10.102",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 314",
+            "primary": "156.154.70.5",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 315",
+            "primary": "195.92.195.94",
+            "secondary": "1.0.0.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 316",
+            "primary": "195.92.195.94",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 317",
+            "primary": "129.250.35.250",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 318",
+            "primary": "10.202.10.10",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 319",
+            "primary": "77.88.8.8",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 320",
+            "primary": "10.202.10.202",
+            "secondary": "85.15.1.15"
+        },
+        {
+            "name": "NetShift Generated DNS - 321",
+            "primary": "80.80.81.81",
+            "secondary": "185.51.200.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 322",
+            "primary": "80.67.169.40",
+            "secondary": "204.74.101.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 323",
+            "primary": "4.2.2.3",
+            "secondary": "212.23.3.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 324",
+            "primary": "208.67.222.222",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 325",
+            "primary": "84.200.70.40",
+            "secondary": "156.154.71.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 326",
+            "primary": "204.74.101.1",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 327",
+            "primary": "209.244.0.4",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 328",
+            "primary": "195.92.195.94",
+            "secondary": "185.55.226.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 329",
+            "primary": "80.80.80.80",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 330",
+            "primary": "198.153.192.1",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 331",
+            "primary": "77.88.8.8",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 332",
+            "primary": "178.22.122.100",
+            "secondary": "216.146.35.35"
+        },
+        {
+            "name": "NetShift Generated DNS - 333",
+            "primary": "204.97.212.10",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 334",
+            "primary": "204.74.101.1",
+            "secondary": "80.67.169.12"
+        },
+        {
+            "name": "NetShift Generated DNS - 335",
+            "primary": "195.46.39.40",
+            "secondary": "129.250.35.250"
+        },
+        {
+            "name": "NetShift Generated DNS - 336",
+            "primary": "80.67.169.40",
+            "secondary": "89.233.43.71"
+        },
+        {
+            "name": "NetShift Generated DNS - 337",
+            "primary": "205.171.3.65",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 338",
+            "primary": "84.200.69.80",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 339",
+            "primary": "204.69.234.1",
+            "secondary": "8.8.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 340",
+            "primary": "8.8.4.4",
+            "secondary": "91.239.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 341",
+            "primary": "178.22.122.100",
+            "secondary": "78.157.42.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 342",
+            "primary": "209.244.0.4",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 343",
+            "primary": "89.233.43.71",
+            "secondary": "129.250.35.250"
+        },
+        {
+            "name": "NetShift Generated DNS - 344",
+            "primary": "198.153.192.1",
+            "secondary": "212.23.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 345",
+            "primary": "4.2.2.2",
+            "secondary": "8.20.247.20"
+        },
+        {
+            "name": "NetShift Generated DNS - 346",
+            "primary": "199.85.127.10",
+            "secondary": "129.250.35.250"
+        },
+        {
+            "name": "NetShift Generated DNS - 347",
+            "primary": "9.9.9.9",
+            "secondary": "205.171.3.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 348",
+            "primary": "10.202.10.11",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 349",
+            "primary": "209.244.0.3",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 350",
+            "primary": "77.88.8.8",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 351",
+            "primary": "129.250.35.250",
+            "secondary": "85.15.1.14"
+        },
+        {
+            "name": "NetShift Generated DNS - 352",
+            "primary": "156.154.71.5",
+            "secondary": "209.244.0.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 353",
+            "primary": "204.97.212.10",
+            "secondary": "9.9.9.9"
+        },
+        {
+            "name": "NetShift Generated DNS - 354",
+            "primary": "199.85.127.10",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 355",
+            "primary": "85.15.1.14",
+            "secondary": "64.6.64.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 356",
+            "primary": "10.202.10.202",
+            "secondary": "198.153.194.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 357",
+            "primary": "204.97.212.10",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 358",
+            "primary": "199.2.252.10",
+            "secondary": "84.200.69.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 359",
+            "primary": "4.2.2.3",
+            "secondary": "212.23.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 360",
+            "primary": "204.117.214.10",
+            "secondary": "216.146.35.35"
+        },
+        {
+            "name": "NetShift Generated DNS - 361",
+            "primary": "1.1.1.1",
+            "secondary": "9.9.9.9"
+        },
+        {
+            "name": "NetShift Generated DNS - 362",
+            "primary": "77.88.8.1",
+            "secondary": "129.250.35.251"
+        },
+        {
+            "name": "NetShift Generated DNS - 363",
+            "primary": "156.154.71.22",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 364",
+            "primary": "195.92.195.94",
+            "secondary": "129.250.35.251"
+        },
+        {
+            "name": "NetShift Generated DNS - 365",
+            "primary": "80.80.80.80",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 366",
+            "primary": "208.67.200.200",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 367",
+            "primary": "78.157.42.100",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 368",
+            "primary": "91.239.100.100",
+            "secondary": "85.15.1.15"
+        },
+        {
+            "name": "NetShift Generated DNS - 369",
+            "primary": "10.202.10.10",
+            "secondary": "185.51.200.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 370",
+            "primary": "91.239.100.100",
+            "secondary": "49.112.112.112"
+        },
+        {
+            "name": "NetShift Generated DNS - 371",
+            "primary": "156.154.70.5",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 372",
+            "primary": "4.2.2.6",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 373",
+            "primary": "74.82.42.42",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 374",
+            "primary": "178.22.122.100",
+            "secondary": "204.117.214.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 375",
+            "primary": "10.202.10.10",
+            "secondary": "156.154.71.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 376",
+            "primary": "77.88.8.1",
+            "secondary": "156.154.70.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 377",
+            "primary": "78.157.42.101",
+            "secondary": "185.55.225.25"
+        },
+        {
+            "name": "NetShift Generated DNS - 378",
+            "primary": "4.2.2.2",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 379",
+            "primary": "8.26.56.26",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 380",
+            "primary": "178.22.122.100",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 381",
+            "primary": "156.154.71.5",
+            "secondary": "212.23.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 382",
+            "primary": "205.171.2.65",
+            "secondary": "9.9.9.9"
+        },
+        {
+            "name": "NetShift Generated DNS - 383",
+            "primary": "80.80.81.81",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 384",
+            "primary": "185.51.200.2",
+            "secondary": "77.88.8.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 385",
+            "primary": "198.153.192.1",
+            "secondary": "84.200.70.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 386",
+            "primary": "199.85.126.10",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 387",
+            "primary": "49.112.112.112",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 388",
+            "primary": "199.2.252.10",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 389",
+            "primary": "216.146.36.36",
+            "secondary": "4.2.2.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 390",
+            "primary": "212.23.3.1",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 391",
+            "primary": "156.154.71.22",
+            "secondary": "4.2.2.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 392",
+            "primary": "204.74.101.1",
+            "secondary": "4.2.2.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 393",
+            "primary": "64.6.65.6",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 394",
+            "primary": "84.200.70.40",
+            "secondary": "156.154.71.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 395",
+            "primary": "10.202.10.10",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 396",
+            "primary": "199.2.252.10",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 397",
+            "primary": "204.97.212.10",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 398",
+            "primary": "10.202.10.202",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 399",
+            "primary": "205.171.2.65",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 400",
+            "primary": "199.85.126.10",
+            "secondary": "80.67.169.12"
+        },
+        {
+            "name": "NetShift Generated DNS - 401",
+            "primary": "185.55.225.25",
+            "secondary": "185.55.226.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 402",
+            "primary": "9.9.9.9",
+            "secondary": "78.157.42.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 403",
+            "primary": "195.92.195.95",
+            "secondary": "4.2.2.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 404",
+            "primary": "204.74.101.1",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 405",
+            "primary": "4.2.2.3",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 406",
+            "primary": "49.112.112.112",
+            "secondary": "208.67.200.200"
+        },
+        {
+            "name": "NetShift Generated DNS - 407",
+            "primary": "80.80.80.80",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 408",
+            "primary": "10.202.10.202",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 409",
+            "primary": "64.6.65.6",
+            "secondary": "80.67.169.12"
+        },
+        {
+            "name": "NetShift Generated DNS - 410",
+            "primary": "89.233.43.71",
+            "secondary": "208.67.222.222"
+        },
+        {
+            "name": "NetShift Generated DNS - 411",
+            "primary": "5.202.100.101",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 412",
+            "primary": "185.55.226.26",
+            "secondary": "84.200.69.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 413",
+            "primary": "10.202.10.10",
+            "secondary": "80.67.169.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 414",
+            "primary": "8.8.4.4",
+            "secondary": "10.202.10.102"
+        },
+        {
+            "name": "NetShift Generated DNS - 415",
+            "primary": "8.20.247.20",
+            "secondary": "77.88.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 416",
+            "primary": "216.146.35.35",
+            "secondary": "4.2.2.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 417",
+            "primary": "156.154.71.5",
+            "secondary": "178.22.122.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 418",
+            "primary": "77.88.8.8",
+            "secondary": "156.154.70.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 419",
+            "primary": "10.202.10.11",
+            "secondary": "204.74.101.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 420",
+            "primary": "216.146.35.35",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 421",
+            "primary": "4.2.2.5",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 422",
+            "primary": "209.244.0.4",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 423",
+            "primary": "156.154.70.5",
+            "secondary": "204.97.212.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 424",
+            "primary": "204.97.212.10",
+            "secondary": "208.67.200.200"
+        },
+        {
+            "name": "NetShift Generated DNS - 425",
+            "primary": "209.244.0.4",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 426",
+            "primary": "77.88.8.1",
+            "secondary": "8.20.247.20"
+        },
+        {
+            "name": "NetShift Generated DNS - 427",
+            "primary": "204.74.101.1",
+            "secondary": "80.67.169.12"
+        },
+        {
+            "name": "NetShift Generated DNS - 428",
+            "primary": "84.200.69.80",
+            "secondary": "1.0.0.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 429",
+            "primary": "185.55.225.25",
+            "secondary": "10.202.10.11"
+        },
+        {
+            "name": "NetShift Generated DNS - 430",
+            "primary": "129.250.35.250",
+            "secondary": "204.74.101.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 431",
+            "primary": "64.6.64.6",
+            "secondary": "78.157.42.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 432",
+            "primary": "195.46.39.39",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 433",
+            "primary": "199.85.127.10",
+            "secondary": "80.80.81.81"
+        },
+        {
+            "name": "NetShift Generated DNS - 434",
+            "primary": "209.244.0.3",
+            "secondary": "205.171.3.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 435",
+            "primary": "10.202.10.11",
+            "secondary": "10.202.10.102"
+        },
+        {
+            "name": "NetShift Generated DNS - 436",
+            "primary": "84.200.70.40",
+            "secondary": "8.8.4.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 437",
+            "primary": "4.2.2.3",
+            "secondary": "216.146.36.36"
+        },
+        {
+            "name": "NetShift Generated DNS - 438",
+            "primary": "216.146.35.35",
+            "secondary": "10.202.10.202"
+        },
+        {
+            "name": "NetShift Generated DNS - 439",
+            "primary": "216.146.36.36",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 440",
+            "primary": "4.2.2.3",
+            "secondary": "209.244.0.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 441",
+            "primary": "205.171.3.65",
+            "secondary": "156.154.70.22"
+        },
+        {
+            "name": "NetShift Generated DNS - 442",
+            "primary": "204.117.214.10",
+            "secondary": "4.2.2.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 443",
+            "primary": "78.157.42.101",
+            "secondary": "199.85.126.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 444",
+            "primary": "212.23.8.1",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 445",
+            "primary": "78.157.42.101",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 446",
+            "primary": "204.69.234.1",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 447",
+            "primary": "205.171.3.65",
+            "secondary": "8.8.8.8"
+        },
+        {
+            "name": "NetShift Generated DNS - 448",
+            "primary": "199.85.127.10",
+            "secondary": "78.157.42.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 449",
+            "primary": "199.2.252.10",
+            "secondary": "5.202.100.101"
+        },
+        {
+            "name": "NetShift Generated DNS - 450",
+            "primary": "1.0.0.1",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 451",
+            "primary": "195.92.195.94",
+            "secondary": "129.250.35.250"
+        },
+        {
+            "name": "NetShift Generated DNS - 452",
+            "primary": "84.200.70.40",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 453",
+            "primary": "89.233.43.71",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 454",
+            "primary": "77.88.8.8",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 455",
+            "primary": "195.92.195.95",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 456",
+            "primary": "195.46.39.40",
+            "secondary": "204.74.101.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 457",
+            "primary": "4.2.2.6",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 458",
+            "primary": "5.202.100.101",
+            "secondary": "49.112.112.112"
+        },
+        {
+            "name": "NetShift Generated DNS - 459",
+            "primary": "8.8.4.4",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 460",
+            "primary": "4.2.2.2",
+            "secondary": "204.74.101.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 461",
+            "primary": "85.15.1.15",
+            "secondary": "1.0.0.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 462",
+            "primary": "156.154.71.22",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 463",
+            "primary": "156.154.71.22",
+            "secondary": "198.153.192.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 464",
+            "primary": "208.67.222.222",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 465",
+            "primary": "185.55.225.25",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 466",
+            "primary": "5.202.100.101",
+            "secondary": "5.202.100.100"
+        },
+        {
+            "name": "NetShift Generated DNS - 467",
+            "primary": "77.88.8.8",
+            "secondary": "8.20.247.20"
+        },
+        {
+            "name": "NetShift Generated DNS - 468",
+            "primary": "10.202.10.11",
+            "secondary": "74.82.42.42"
+        },
+        {
+            "name": "NetShift Generated DNS - 469",
+            "primary": "85.15.1.15",
+            "secondary": "4.2.2.4"
+        },
+        {
+            "name": "NetShift Generated DNS - 470",
+            "primary": "1.0.0.1",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 471",
+            "primary": "156.154.71.22",
+            "secondary": "195.92.195.95"
+        },
+        {
+            "name": "NetShift Generated DNS - 472",
+            "primary": "4.2.2.1",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 473",
+            "primary": "185.55.226.26",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 474",
+            "primary": "185.55.225.25",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 475",
+            "primary": "185.51.200.2",
+            "secondary": "4.2.2.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 476",
+            "primary": "209.244.0.3",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 477",
+            "primary": "4.2.2.4",
+            "secondary": "80.80.80.80"
+        },
+        {
+            "name": "NetShift Generated DNS - 478",
+            "primary": "204.69.234.1",
+            "secondary": "129.250.35.250"
+        },
+        {
+            "name": "NetShift Generated DNS - 479",
+            "primary": "205.171.2.65",
+            "secondary": "205.171.3.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 480",
+            "primary": "10.202.10.11",
+            "secondary": "212.23.3.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 481",
+            "primary": "10.202.10.11",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 482",
+            "primary": "204.117.214.10",
+            "secondary": "208.67.222.222"
+        },
+        {
+            "name": "NetShift Generated DNS - 483",
+            "primary": "185.55.225.25",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 484",
+            "primary": "8.26.56.26",
+            "secondary": "185.51.200.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 485",
+            "primary": "74.82.42.42",
+            "secondary": "64.6.65.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 486",
+            "primary": "64.6.65.6",
+            "secondary": "185.55.226.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 487",
+            "primary": "80.67.169.40",
+            "secondary": "4.2.2.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 488",
+            "primary": "156.154.70.5",
+            "secondary": "8.26.56.26"
+        },
+        {
+            "name": "NetShift Generated DNS - 489",
+            "primary": "5.202.100.100",
+            "secondary": "89.233.43.71"
+        },
+        {
+            "name": "NetShift Generated DNS - 490",
+            "primary": "199.85.126.10",
+            "secondary": "199.2.252.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 491",
+            "primary": "4.2.2.4",
+            "secondary": "209.244.0.3"
+        },
+        {
+            "name": "NetShift Generated DNS - 492",
+            "primary": "4.2.2.4",
+            "secondary": "199.85.127.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 493",
+            "primary": "216.146.36.36",
+            "secondary": "64.6.64.6"
+        },
+        {
+            "name": "NetShift Generated DNS - 494",
+            "primary": "10.202.10.102",
+            "secondary": "195.46.39.40"
+        },
+        {
+            "name": "NetShift Generated DNS - 495",
+            "primary": "49.112.112.112",
+            "secondary": "4.2.2.2"
+        },
+        {
+            "name": "NetShift Generated DNS - 496",
+            "primary": "209.244.0.4",
+            "secondary": "156.154.70.5"
+        },
+        {
+            "name": "NetShift Generated DNS - 497",
+            "primary": "216.146.36.36",
+            "secondary": "1.1.1.1"
+        },
+        {
+            "name": "NetShift Generated DNS - 498",
+            "primary": "199.85.126.10",
+            "secondary": "10.202.10.10"
+        },
+        {
+            "name": "NetShift Generated DNS - 499",
+            "primary": "10.202.10.202",
+            "secondary": "205.171.2.65"
+        },
+        {
+            "name": "NetShift Generated DNS - 500",
+            "primary": "1.0.0.1",
+            "secondary": "209.244.0.3"
+        }
+    ]
+}
