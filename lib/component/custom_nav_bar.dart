@@ -19,6 +19,10 @@ class CustomBottomNavBar extends StatelessWidget {
     final theme = themeProvider.theme;
     final isLightTheme = theme.brightness == Brightness.light;
 
+    final shadowColor = isLightTheme
+        ? const Color(0xFF6200EE).withOpacity(0.5)
+        : const Color(0xFF3ECF8E).withOpacity(0.5);
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -29,9 +33,7 @@ class CustomBottomNavBar extends StatelessWidget {
           borderRadius: BorderRadius.circular(24),
           boxShadow: [
             BoxShadow(
-              color: isLightTheme
-                  ? Colors.grey.shade300
-                  : Colors.black.withOpacity(0.5),
+              color: shadowColor,
               blurRadius: 8,
               offset: const Offset(0, -4),
             ),
@@ -49,14 +51,14 @@ class CustomBottomNavBar extends StatelessWidget {
               SalomonBottomBarItem(
                 icon: const Icon(Icons.home_outlined),
                 title: const Text("Home"),
-                selectedColor: Colors.blueAccent,
+                selectedColor: Colors.tealAccent,
                 unselectedColor:
                     theme.bottomNavigationBarTheme.unselectedItemColor,
               ),
               SalomonBottomBarItem(
                 icon: const Icon(Icons.dns_outlined),
                 title: const Text("DNS"),
-                selectedColor: Colors.greenAccent,
+                selectedColor: Colors.redAccent,
                 unselectedColor:
                     theme.bottomNavigationBarTheme.unselectedItemColor,
               ),
